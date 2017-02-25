@@ -1,35 +1,7 @@
-# 我的博客
+## :cn: 个人博客 :cn:
 
-## 算法和数据结构
-[你好](./2017/aa.md)
-### 冒泡排序
-```javascript
-function bubbleSort(arr, callback) {
-	if(Object.prototype.toString.call(arr) !== '[object Array]') {
-		return;
-	}
-	if(typeof callback === 'undefined') {
-		callback = function (a, b) {
-			return a-b;
-		}
-	}
+### 前言
+一入前端深似海啊，朋友，目前主要工作偏业务，但是感觉成长的不够，所以开此博客利用闲暇之余熟练前端三剑（HTML，CSS，JS），所写文章不保证100%准确，欢迎探讨
 
-	var count = 0;
-	for(var i = 0; i < arr.length-1; i++) {
-		var flag = true;
-		for(var j = 0; j < arr.length-i-1; j++) {
-			count++;
-			if(callback(arr[j], arr[j+1]) > 0) {
-				flag = false;
-				var temp = arr[j];
-				arr[j] = arr[j+1];
-				arr[j+1] = temp;
-			}
-		}
-		if(flag) {
-			break;
-		}
-	}
-	return arr;
-}
-```
+### :two::zero::one::seven:
+1. [冒泡排序](./2017/冒泡排序.md)
