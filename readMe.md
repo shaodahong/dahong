@@ -2,7 +2,7 @@
 
 ## 算法和数据结构
 ### 冒泡排序
-```
+```javascript
 function bubbleSort(arr, callback) {
 	if(Object.prototype.toString.call(arr) !== '[object Array]') {
 		return;
