@@ -6,4 +6,4 @@
 ### 目录
 
 #### 2017
-1. [冒泡排序](https://github.com/Redshao/dahong/issues/1) Redshao/dahong#1
+1. [实现一个冒泡排序](https://github.com/Redshao/dahong/issues/1)
