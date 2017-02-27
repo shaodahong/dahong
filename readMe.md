@@ -7,3 +7,4 @@
 
 #### 2017
 1. [实现一个冒泡排序](https://github.com/Redshao/dahong/issues/1)
+2. [实现一个快速排序](https://github.com/Redshao/dahong/issues/2)
