@@ -1,0 +1,22 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "### 前言 一入前端深似海啊，朋友，目前主要工作偏业务，但是感觉成长的不够，所以开此博客利用闲暇之余熟练前端三剑（HTML，CSS，JS），所写文章不保证100%准确，欢迎探讨",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Redshao/dahong.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Redshao/dahong/issues"
+  },
+  "homepage": "https://github.com/Redshao/dahong#readme",
+  "dependencies": {
+    "angular": "^1.6.2"
+  }
+}
