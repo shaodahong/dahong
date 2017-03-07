@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Redshao/dahong#readme",
   "dependencies": {
-    "angular": "^1.6.2"
+    "angular": "^1.6.2",
+    "socket.io": "^1.7.3"
   }
 }
