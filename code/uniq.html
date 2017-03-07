@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script src="../node_modules/underscore/underscore.js"></script>
+    <script>
+        var arr = [1, '1', {'name': 1}, {'name': 1}, false, 'false', 1];
+
+        function uniq1(arr) {
+            var tempObj = {},
+                tempArr = [];
+            for (var i = 0; i < arr.length; i++) {
+                if (tempObj[arr[i]]) {
+                    tempObj[arr[i]]++
+                }else {
+                    tempObj[arr[i]] = 1;
+                }
+            }
+            for (var key in tempObj) {
+                tempArr.push(key)
+            }
+            return tempArr;
+        }
+
+        function uniq2(arr) {
+            var tempArr = [];
+            for (var i = 0; i < arr.length; i++) {
+                if (tempArr.indexOf(arr[i]) < 0) {
+                    tempArr.push(arr[i])
+                }
+            }
+            return tempArr;
+        }
+
+        console.log(_.uniq(arr))
+
+
+    </script>
+</body>
+</html>
