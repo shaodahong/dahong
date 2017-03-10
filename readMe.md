@@ -11,3 +11,4 @@
 3. [嗨！JSer，你知道拦截器（interceptor）么？](https://github.com/Redshao/dahong/issues/3)
 4. [揭秘Jquery](https://github.com/Redshao/dahong/issues/4)
 5. [深入JS引擎：如何让你的JS更快](https://github.com/Redshao/dahong/issues/5)
+6. [一看就懂的设计模式之发布/订阅模式](https://github.com/Redshao/dahong/issues/6)

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    var scope = (function() {
+    	//消息列表
+        var events = {};
+        return {
+        	//消息订阅
+            on: function(name, handler) {
+                var index;	//记录当前消息事件的索引
+                //如果该消息已经存在，则将处理函数放到该消息的事件队列中
+                if (events[name]) {
+                    index = events[name].push(handler) - 1;
+                } else {
+                	//如果该消息已经不存在，则创建该消息的事件队列，并将处理函数放到该消息的事件队列中
+                    events[name] = [];
+                    events[name].push(handler);
+                    index = 0;
+                }
+                //返回当前消息处理事件的移除函数
+                return function() {
+                    events[name].splice(index, 1);
+                }
+            },
+            //消息关闭
+            off: function(name) {
+                if (!events[name]) return;
+                //如果该消息存在，则将该消息删除
+                delete events[name];
+            },
+            //消息发布
+            emit: function(name, msg) {
+            	//如果该消息不存在，不处理
+                if (!events[name]) {
+                    return;
+                }
+                //该消息存在，将该消息事件队列中的事件都处理一遍
+                events[name].forEach(function(v, i) {
+                    v(msg);
+                })
+            }
+        }
+    })()
+
+    var remove = scope.on('refreshFileList', function(msg) {
+        //处理逻辑
+    })
+
+    //点击刷新
+    var refresh = function () {
+    	scope.emit('refreshFileList')
+    }
+
+    //添加数据
+    var addItem = function () {
+    	scope.emit('refreshFileList')
+    }
+
+    //删除数据
+    var removeItem = function () {
+    	scope.emit('refreshFileList')
+    }
+
+    var destroy = function () {
+    	remove();	//移除refreshFileList中对应的事件
+    	scope.off('refreshFileList');	//移除refreshFileList
+    }
+
+
+    </script>
+</body>
+
+</html>
