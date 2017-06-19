@@ -3,30 +3,25 @@
  */
 
 angular.module('app', [])
-    .controller('appCtrl', ['$scope', function ($scope) {
-        $scope.test = function () {
-            $scope.changList = true;
+    .controller('appCtrl', ['$q', '$scope', function ($q, $scope) {
+
+        var defer = $q.defer();
+        $scope.post = function () {
+            console.log('post');
+            return defer.promise.then(function(res) {
+                console.log('res', res);
+            })
         }
 
-        $scope.show = true;
-    }])
-    .component('fileList', {
-        template: '<div>文件信息</div>',
-        controller: ['$scope', function ($scope) {
+        $scope.reject = function () {
+            console.log('reject');
+            defer.reject('false');
+            return defer.promise;
+        }
 
-        }]
-    })
-    .directive('changList', [function () {
-        return {
-            restrict: 'A',
-            link: function ($scope, $ele, $attrs) {
-                $scope.$watch($attrs.changList, function (n, o) {
-                    console.log('changList:watch', n, o);
-                    if(n === true) {
-                        $scope.$parent[$attrs.changList] = false;
-                        console.log($attrs, $scope);
-                    }
-                })
-            }
+        $scope.resolve = function () {
+            console.log('resolve');
+            defer.resolve('true');
+            return defer.promise;
         }
     }])

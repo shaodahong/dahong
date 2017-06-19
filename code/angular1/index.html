@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body ng-app="app">
-    <div ng-controller="appCtrl">
-        <button ng-click="test()">点击</button>
-        <file-list chang-list="changList" ng-if="show"></file-list>
-    </div>
+<body ng-app="app" ng-controller="appCtrl">
+    <button ng-click='post()'>post</button>
+    <button ng-click="resolve()">resolve</button>
+    <button ng-click="reject()">reject</button>
     <script src="../../node_modules/angular/angular.js"></script>
     <script src="index.js"></script>
 </body>
