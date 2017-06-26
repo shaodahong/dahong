@@ -12,3 +12,5 @@
 4. [揭秘Jquery](https://github.com/Redshao/dahong/issues/4)
 5. [深入JS引擎：如何让你的JS更快](https://github.com/Redshao/dahong/issues/5)
 6. [一看就懂的设计模式之发布/订阅模式](https://github.com/Redshao/dahong/issues/6)
+7. [boarder，快速开始一个webpack项目-介绍篇](https://github.com/Redshao/dahong/issues/7)
+8. [boarder，快速开始一个webpack项目-优化篇](https://github.com/Redshao/dahong/issues/8)
