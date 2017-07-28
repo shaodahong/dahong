@@ -14,4 +14,4 @@
 6. [一看就懂的设计模式之发布/订阅模式](https://github.com/Redshao/dahong/issues/6)
 7. [boarder，快速开始一个webpack项目-介绍篇](https://github.com/Redshao/dahong/issues/7)
 8. [boarder，快速开始一个webpack项目-优化篇](https://github.com/Redshao/dahong/issues/8)
-9
+9. [一个高度可定制的vue modal插件](https://github.com/Redshao/dahong/issues/9)
