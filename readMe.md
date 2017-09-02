@@ -15,3 +15,4 @@
 7. [boarder，快速开始一个webpack项目-介绍篇](https://github.com/Redshao/dahong/issues/7)
 8. [boarder，快速开始一个webpack项目-优化篇](https://github.com/Redshao/dahong/issues/8)
 9. [一个高度可定制的vue modal插件](https://github.com/Redshao/dahong/issues/10)
+10. [一名非科班出身的前端自述](https://github.com/Redshao/dahong/issues/11)
