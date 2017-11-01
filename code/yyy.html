@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+		.edit {
+			width: 500px;
+			height: 200px;
+			border: 1px solid red;
+		}
+	</style>
 </head>
-<body>
-	<div id="box" fun="1111"></div>
-	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
 
+<body>
+
+	<div contenteditable="true" class="edit"></div>
+
+
+
+
+	<script src="../node_modules/jquery/dist/jquery.js"></script>
 	<script>
 		$(function () {
-			console.log($('#box').attr('fun'))
+			$('.edit').on('keyup', function () {
+				console.log($(this).html())
+			})
+
+
 		})
-
-
 	</script>
+
+
 </body>
+
 </html>
