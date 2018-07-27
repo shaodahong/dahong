@@ -1,12 +1,9 @@
 ## :cn: 个人博客 :cn:
 
-### 前言
-一入前端深似海啊，朋友，目前主要工作偏业务，但是感觉成长的不够，所以开此博客利用闲暇之余熟练前端三剑（HTML，CSS，JS），所写文章不保证100%准确，欢迎探讨
-
 ### 目录
 
 #### 2018
-1. [前端正则浅析](https://github.com/shaodahong/dahong/issues/17)
+1. [Webpack 构建策略 module 和 nomodule](https://github.com/shaodahong/dahong/issues/18)
 
 #### 2017
 1. [实现一个冒泡排序](https://github.com/shaodahong/dahong/issues/1)
