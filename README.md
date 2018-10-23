@@ -1,11 +1,9 @@
-## :cn: 个人博客 :cn:
+![dahong](./bg.jpg)
 
-### 目录
-
-#### 2018
+## 2018
 1. [Webpack 构建策略 module 和 nomodule](https://github.com/shaodahong/dahong/issues/18)
 
-#### 2017
+## 2017
 1. [实现一个冒泡排序](https://github.com/shaodahong/dahong/issues/1)
 2. [实现一个快速排序](https://github.com/shaodahong/dahong/issues/2)
 3. [嗨！JSer，你知道拦截器（interceptor）么？](https://github.com/shaodahong/dahong/issues/3)
