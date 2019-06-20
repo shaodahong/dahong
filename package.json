@@ -1,0 +1,14 @@
+{
+  "name": "dahong",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Redshao/dahong.git",
+  "author": "shao <darryshaw@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "scripts": {
+    "gh": "node ./scripts/build.js"
+  }
+}
