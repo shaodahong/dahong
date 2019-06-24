@@ -6,9 +6,25 @@
   "author": "shao <darryshaw@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "@typescript-eslint/parser": "^1.11.0",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.14.1",
+    "gh-pages": "^2.0.1",
+    "typescript": "^3.5.2",
+    "webpack": "^4.35.0"
   },
   "scripts": {
-    "gh": "node ./scripts/build.js"
+    "dev": "node ./build/dev.js",
+    "build": "node ./build/build.js",
+    "test": "jest",
+    "gh": "node ./scripts/gh.js"
+  },
+  "dependencies": {
+    "react": "^16.8.6"
   }
 }
