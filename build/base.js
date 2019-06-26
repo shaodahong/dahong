@@ -9,9 +9,9 @@ const config = {
 			{
 				test: /\.ts[x]?$/,
 				use: [
-					'babel-loader',
+		  	'babel-loader',
 					{
-						loader: 'ts-loader',
+						  loader: 'ts-loader',
 						options: {
 							transpileOnly: true,
 							happyPackMode: true,
