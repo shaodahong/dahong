@@ -2,27 +2,27 @@
   "name": "dahong",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:Redshao/dahong.git",
-  "author": "shao <darryshaw@gmail.com>",
+  "repository": "git@github.com:shaodahong/dahong.git",
+  "author": "shaodahong <darryshaw@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^1.11.0",
-    "@typescript-eslint/parser": "^1.11.0",
-    "eslint": "^6.0.1",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^5.1.0",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.14.2",
-    "gh-pages": "^2.0.1",
-    "typescript": "^3.5.2",
-    "webpack": "^4.35.0"
-  },
   "scripts": {
     "dev": "node ./build/dev.js",
     "build": "node ./build/build.js",
     "test": "jest",
     "gh": "node ./scripts/gh.js"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "gh-pages": "^2.0.1",
+    "typescript": "^3.5.3",
+    "webpack": "^4.38.0"
   },
   "dependencies": {
     "react": "^16.8.6"
