@@ -1,13 +1,13 @@
 {
   "name": "dahong",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "repository": "git@github.com:shaodahong/dahong.git",
   "author": "shaodahong <darryshaw@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "node ./build/dev.js",
-    "build": "node ./build/build.js",
+    "start": "node ./build/webpack.dev.js",
+    "build": "node ./build/webpack.prod.js",
     "test": "jest",
     "gh": "node ./scripts/gh.js"
   },
