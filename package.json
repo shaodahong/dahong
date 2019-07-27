@@ -6,14 +6,18 @@
   "author": "shaodahong <darryshaw@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node ./build/webpack.dev.js",
+    "clean-dist": "rimraf ./dist",
+    "start": "npm run clean-dist && cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.js",
     "build": "node ./build/webpack.prod.js",
     "test": "jest",
     "gh": "node ./scripts/gh.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^5.2.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-config-prettier": "^6.0.0",
@@ -21,8 +25,15 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "gh-pages": "^2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-template": "^6.2.0",
+    "rimraf": "^2.6.3",
+    "ts-loader": "^6.0.4",
     "typescript": "^3.5.3",
-    "webpack": "^4.38.0"
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "react": "^16.8.6"

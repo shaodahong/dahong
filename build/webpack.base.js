@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { resolve } = require('./utils');
 
 const config = {
@@ -21,7 +21,16 @@ const config = {
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'BieWen - 别问',
+      template: require('html-webpack-template'),
+      appMountId: 'root',
+      mobile: true,
+      favicon: ''
+    })
+  ]
 };
 
 module.exports = config;
