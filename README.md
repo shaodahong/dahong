@@ -2,6 +2,9 @@
 
 ## 2019
 
+### 十月
+- [【翻译】如何为 Github 开源项目贡献代码？](https://github.com/shaodahong/dahong/issues/20)
+
 ### 六月
 - [给 gh-pages 设置自定义域名](https://github.com/shaodahong/dahong/issues/19)
 
