@@ -20,6 +20,5 @@
 - [boarder，快速开始一个 webpack 项目-介绍篇](https://github.com/shaodahong/dahong/issues/7)
 - [boarder，快速开始一个 webpack 项目-优化篇](https://github.com/shaodahong/dahong/issues/8)
 - [一个高度可定制的 vue modal 插件](https://github.com/shaodahong/dahong/issues/10)
-- [一名非科班出身的前端自述](https://github.com/shaodahong/dahong/issues/11)
 - [趁着双 11，写个京东商品自动下单](https://github.com/shaodahong/dahong/issues/13)
 - [我要懂系列 1-call 和 apply](https://github.com/shaodahong/dahong/issues/15)
